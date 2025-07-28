@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Event Organizer</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="events">Create Event</a></li>
+                <li><a href="#" class="nav-link" data-section="dashboard">Dashboard</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+                <li><a href="#" class="nav-link" data-section="login" id="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <!-- Home -->
+<section id="home" class="content-section active">
+    <h2>Welcome to Event Organizer</h2>
+    <p>Plan, promote, and manage your events with ease. <b>Login</b> to start creating your events.</p>
+
+    <div class="features">
+        <div class= "feature-card" alt="Plan Events">
+            <h3>Plan</h3>
+            <img src="plan.jpg" alt="Plan">
+            <p>Create and customize events with images, tickets, and descriptions.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Promote Events</h3>
+            <img src="Promote.jpg" alt="Promote Events">
+            <p>Share your events with attendees and boost visibility easily.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Manage</h3>
+            <img src="Manage.jpeg" alt="Manage Events">
+            <p>Track ticket sales, revenue, and engagement with analytics.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Login -->
+    <section id="login" class="content-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+    </section>
+
+    <!-- Register -->
+    <section id="register" class="content-section">
+        <h2>Create Account</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+    </section>
+
+    <!-- Create Event -->
+    <section id="events" class="content-section">
+        <h2>Create an Event</h2>
+        <form id="event-form">
+            <input type="text" id="event-name" placeholder="Event Name" required>
+            <input type="text" id="event-type" placeholder="Event Type (Conference, Party...)" required>
+            <input type="date" id="event-date" required>
+            <input type="time" id="event-time" required>
+            <input type="text" id="event-location" placeholder="Location" required>
+            <input type="number" id="ticket-price" placeholder="Ticket Price (₹)" required>
+            <input type="number" id="ticket-quantity" placeholder="Total Tickets" required>
+            <input type="file" id="event-image" accept="image/*">
+            <textarea id="event-description" placeholder="Event Description" required></textarea>
+            <button type="submit">Add Event</button>
+        </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="content-section">
+        <h2>My Events Dashboard</h2>
+        <p><strong>Total Tickets Sold:</strong> <span id="total-sold">0</span></p>
+        <p><strong>Total Revenue:</strong> ₹<span id="total-revenue">0</span></p>
+        <div id="events-list"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Email: support@eventorganizer.com</p>
+        <p>Phone: +91-9876543210</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Event Organizer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
